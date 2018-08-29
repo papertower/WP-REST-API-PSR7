@@ -1,0 +1,31 @@
+{
+    "name": "papertower/wp-rest-api-psr7",
+    "description": "Provides PSR-7 and WP REST API Response and Request classes",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "psr/http-message": "^1.0.1"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:papertower/WP-REST-API-PSR7.git"
+        }
+    ],
+    "keywords": [
+        "wp rest api",
+        "wordpress",
+        "psr-7"
+    ],
+    "authors": [
+        {
+            "name": "Jason Adams",
+            "email": "jason@papertower.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WPRestApi\\PSR7\\": "src/"
+        }
+    }
+}
