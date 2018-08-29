@@ -8,3 +8,6 @@ This means that any library which extends HTTP Messages using the PSR-7 standard
 
 ## When would I need this?
 This is the sort of thing where you don't need it until you do and when you do you'll know it's missing. 🙂
+
+## Things to keep in mind
+When generating a `WP_REST_PSR7_Request` from a request, the body is passed directly to the PSR-7 body stream. This means that any validation and sanitization that `WP_REST_Server` provides may not be applied. Be aware of this and make sure that sanitization and validation are applied if the library does not.
